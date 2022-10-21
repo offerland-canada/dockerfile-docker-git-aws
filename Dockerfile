@@ -1,4 +1,5 @@
-FROM ${bsae_image}
+ARG base_image=docker:latest
+FROM ${base_image}
 
 RUN apk add --no-cache curl && \
   curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
