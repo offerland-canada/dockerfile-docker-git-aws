@@ -1,10 +1,6 @@
 ARG base_image=docker:latest
 FROM ${base_image}
 
-RUN apk add --no-cache curl && \
-  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
-  unzip awscliv2.zip && \
-  ./aws/install && \
-  rm -Rf ./aws
+RUN apk add --no-cache aws-cli
 
 RUN aws --version && docker -v
