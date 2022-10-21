@@ -6,6 +6,4 @@ RUN apk add --no-cache curl && \
   ./aws/install -i /usr/local/aws -b /usr/local/bin/aws && \
   rm -Rf ./aws
 
-RUN apk add --no-cache git
-
 RUN aws --version && docker -v
