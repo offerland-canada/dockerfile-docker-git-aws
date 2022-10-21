@@ -15,7 +15,7 @@
     "internet": {
       "dockerfile": "Dockerfile",
       "args": {
-        "docker-tag": "${TAG}"
+        "base_image": "docker:${TAG}"
       },
       "tags": [
         "ghcr.io/offerland-canada/dockerfile-docker-git-aws:${TAG}"
