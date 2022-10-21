@@ -2,7 +2,7 @@
   "group": {
     "default": {
       "targets": [
-        "internet"
+        "docker-git-aws"
       ]
     }
   },
@@ -12,7 +12,7 @@
     }
   },
   "target": {
-    "internet": {
+    "docker-git-aws": {
       "dockerfile": "Dockerfile",
       "args": {
         "base_image": "docker:${TAG}"
