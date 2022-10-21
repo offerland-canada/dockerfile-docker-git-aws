@@ -1,0 +1,22 @@
+{
+  "group": {
+    "default": {
+      "targets": [
+        "internet"
+      ]
+    }
+  },
+  "variable": {
+    "TAG": {
+      "default": "latest"
+    }
+  },
+  "target": {
+    "internet": {
+      "dockerfile": "Dockerfile",
+      "tags": [
+        "ghcr.io/offerland-canada/dockerfile-docker-git-aws:${TAG}"
+      ]
+    }
+  }
+}
