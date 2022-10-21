@@ -14,6 +14,9 @@
   "target": {
     "internet": {
       "dockerfile": "Dockerfile",
+      "args": {
+        "docker-tag": "${TAG}"
+      },
       "tags": [
         "ghcr.io/offerland-canada/dockerfile-docker-git-aws:${TAG}"
       ]
