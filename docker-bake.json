@@ -18,7 +18,7 @@
         "base_image": "docker:${TAG}"
       },
       "tags": [
-        "ghcr.io/offerland-canada/dockerfile-docker-git-aws:${TAG}"
+        "ghcr.io/offerland-ca/dockerfile-docker-git-aws:${TAG}"
       ]
     }
   }
