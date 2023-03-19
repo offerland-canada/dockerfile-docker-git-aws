@@ -1,4 +1,4 @@
-# Dockerfile with docker, git and awscli
+# A Docker Image with `docker`, `git` and `awscli`
 
 ## Introduction
 
